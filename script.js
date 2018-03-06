@@ -29,12 +29,12 @@ console.log(result);
 var ask = prompt("Would you like to print your name?");
 var askAgain = "yes";
 var greeting = "Hello, my name is ";
-var response = greeting + name;
 
-if(ask == "yes"){
+if(ask === "yes"){
 		var name = prompt("What is your name?");
+		var response = greeting + name;
 		console.log(greeting + name);
-
+		
 		while(askAgain=="yes"){
 			var askAgain = prompt("Would you like to print this again?");
 			console.log(response += "!");
@@ -43,7 +43,7 @@ if(ask == "yes"){
 
 // Exercise Four
 
-var ask = prompt("what time of day is it?");
+var ask = prompt("What time of day is it?");
 
 if(ask == "morning"){
 	console.log("Since it is morning, you should be eating breakfast. We suggest eggs and toast.")
